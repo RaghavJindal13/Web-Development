@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+The <!DOCTYPE html> declaration defines this document to be HTML5
+The <html> element is the root element of an HTML page
+The <head> element contains meta information about the document
+The <title> element specifies a title for the document
+The <body> element contains the visible page content
+The <h1> element defines a large heading
+The <p> element defines a paragraph
+------------------------------------------------------
+HTML tags are element names surrounded by angle brackets:
+
+<tagname>content goes here...</tagname>
+The browser does not display the HTML tags, but uses them to determine how to display the document:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HTML Editors
+step 1- open notepad
+step 2- write the desired code
+step 3- Save the file on your computer. Select File > Save as in the Notepad menu.
+        Name the file "index.htm" and set the encoding to UTF-8 (which is the preferred encoding for HTML files).
+        You can use either .htm or .html as file extension. There is no difference, it is up to you.
+step 4- Open the saved HTML file in your favorite browser (double click on the file, or right-click - and choose "Open with").
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HTML Documents
+All HTML documents must start with a document type declaration: <!DOCTYPE html>.
+The HTML document itself begins with <html> and ends with </html>.
+The visible part of the HTML document is between <body> and </body>.
+
+HTML Headings
+HTML headings are defined with the <h1> to <h6> tags.
+<h1> defines the most important heading. <h6> defines the least important heading: sixe goes on decreasing
+
+HTML Paragraphs
+HTML paragraphs are defined with the <p> tag:
+
+HTML Links
+HTML links are defined with the <a> tag:
+Example
+<a href="https://www.w3schools.com">This is a link</a>
+The link's destination is specified in the href attribute. 
+Attributes are used to provide additional information about HTML elements.
+
+HTML Images
+HTML images are defined with the <img> tag.
+The source file (src), alternative text (alt), width, and height are provided as attributes:
+Example
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+HTML Buttons
+HTML buttons are defined with the <button> tag:
+Example
+<button>Click me</button>
+
+HTML Lists
+HTML lists are defined with the <ul> (unordered/bullet list) or the <ol> (ordered/numbered list) tag, followed by <li> tags (list items):
+Example
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+HTML Elements
+An HTML element usually consists of a start tag and end tag, with the content inserted in between:
+<tagname>Content goes here...</tagname>
+The HTML element is everything from the start tag to the end tag:
+HTML elements with no content are called empty elements. Empty elements do not have an end tag, such as the <br> element (which indicates a line break).
+
+Nested HTML Elements
+HTML elements can be nested (elements can contain elements).
+All HTML documents consist of nested HTML elements.
+This example contains four HTML elements:
+Example
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+
+Some HTML elements will display correctly, even if you forget the end tag:like <p>
+
+Use Lowercase Tags
+HTML tags are not case sensitive: <P> means the same as <p>.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+HTML Attributes
+Attributes provide additional information about HTML elements.
+All HTML elements can have attributes
+Attributes provide additional information about an element
+Attributes are always specified in the start tag
+Attributes usually come in name/value pairs like: name="value"
+example 1 href attribute used in html links
+        2 src attribute used in html images
+        3 The alt attribute specifies an alternative text to be used, when an image cannot be displayed.   The alt attribute is also useful if the image does not exist
+          The value of the attribute can be read by screen readers. This way, someone "listening" to the webpage, e.g. a blind person, can "hear" the element. 
+        4 The style attribute is used to specify the styling of an element, like color, font, size etc.
+          Example
+          <p style="color:red">I am a paragraph</p>
+        5 The language of the document can be declared in the <html> tag.
+          The language is declared with the lang attribute.
+          Declaring a language is important for accessibility applications (screen readers) and search engines:
+
+          <!DOCTYPE html>
+          <html lang="en-US">
+          <body>
+        6 Here, a title attribute is added to the <p> element. The value of the title attribute will be displayed as a tooltip when you mouse over the paragraph:
+            Example
+                  <p title="I'm a tooltip">
+                   This is a paragraph.
+                   </p>
+
+SOME IMPORTANT THINGS TO REMEMBER
+1)We Suggest: Use Lowercase Attributes
+2)We Suggest: Quote Attribute Values
+3)Double quotes around attribute values are the most common in HTML, but single quotes can also be used.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+HTML HEADINGS
+Headings are defined with the <h1> to <h6> tags.
+
+<h1> defines the most important heading. <h6> defines the least important heading.
+
+Example
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+ Browsers automatically add some white space (a margin) before and after a heading.
+ Use HTML headings for headings only. Don't use headings to make text BIG or bold.
+
+Each HTML heading has a default size. However, you can specify the size for any heading with the style attribute, using the CSS font-size property:
+         Example
+         <h1 style="font-size:60px;">Heading 1</h1>
+
+The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+The <hr> element is used to separate content (or define a change) in an HTML page:
+Example
+<h1>This is heading 1</h1>
+<p>This is some text.</p>
+<hr>
+<h2>This is heading 2</h2>
+<p>This is some other text.</p>
+<hr>
+Have you ever seen a Web page and wondered "Hey! How did they do that?"
+
+View HTML Source Code:
+Right-click in an HTML page and select "View Page Source" (in Chrome) or "View Source" (in IE), or similar in other browsers. This will open a window containing the HTML source code of the page.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+HTML Paragraphs
+<p>
+This paragraph
+contains a lot of lines
+in the source code,
+but the browser 
+ignores it.
+</p>
+
+
+<p>
+This paragraph
+contains         a lot of spaces
+in the source         code,
+but the        browser 
+ignores it.
+</p>
+
+The Poem Problem
+This poem will display on a single line:
+
+Example
+<p>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</p>
+The HTML <pre> Element
+The HTML <pre> element defines preformatted text.
+
+The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:
+
+Example
+<pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</pre>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HTML Styles
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
